@@ -41,6 +41,7 @@ function App() {
       onConferenceTerminated={e => onConferenceTerminated(e)}
       onConferenceJoined={e => onConferenceJoined(e)}
       onConferenceWillJoin={e => onConferenceWillJoin(e)}
+      endCall={JitsiMeet.endCall()}
       style={{
         flex: 1,
         height: '100%',

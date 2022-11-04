@@ -4,7 +4,7 @@ import JitsiMeet, {JitsiMeetView} from 'react-native-jitsi-meet';
 function App() {
   useEffect(() => {
     setTimeout(() => {
-      const url = 'https://meet.jit.si/exemple';
+      const url = 'https://meet.jit.si/exemple/1111';
       const userInfo = {
         displayName: 'User',
         email: 'user@example.com',
@@ -45,9 +45,9 @@ function App() {
         flex: 1,
         height: '100%',
         width: '100%',
+        backgroundColor: '#FFFFFF',
       }}
     />
   );
 }
-
 export default App;

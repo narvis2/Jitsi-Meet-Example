@@ -28,7 +28,7 @@ allprojects {
         }
 
         maven { // <---- Add this block
-            url "https://github.com/narvis2/video-meeting-maven-repository/raw/main/releases"
+            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
         }
         
         maven {
