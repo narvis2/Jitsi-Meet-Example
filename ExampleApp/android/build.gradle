@@ -19,6 +19,8 @@ buildscript {
     }
 }
 
+// def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
+
 allprojects {
     repositories {
         mavenLocal()
@@ -28,13 +30,20 @@ allprojects {
         }
 
         maven { // <---- Add this block
-            url "https://github.com/narvis2/video-meeting-maven-repository/raw/main/releases"
+            url "https://github.com/narvis2/Jitsi-Meet-Maven-Repository-5.1.0/tree/main/releases"
         }
         
         maven {
             // Android JSC is installed from npm
             url("$rootDir/../node_modules/jsc-android/dist")
         }
+
+        // configurations.all {
+        //     resolutionStrategy {
+        //         // Remove this override in 0.66, as a proper fix is included in react-native itself.
+        //         force "com.facebook.react:react-native:" + REACT_NATIVE_VERSION
+        //     }
+        // }
 
         google()
         jcenter()
