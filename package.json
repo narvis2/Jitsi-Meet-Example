@@ -11,9 +11,7 @@
   "bugs": {
     "url": "https://github.com/skrafft/react-native-jitsi-meet/issues"
   },
-  "dependencies": {
-    "react-native-jitsi-meet": "^2.3.1"
-  },
+  "dependencies": {},
   "keywords": [
     "jitsi",
     "jitsi meet",
